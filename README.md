@@ -10,18 +10,38 @@ BLB Categories Microservice
 $ npm install
 ```
 
-## Generating a database migration
+---
+
+## Database Migrations
+
+### Generating a database migration
 
 ```bash
 $ npm run build
 $ typeorm migration:generate -n MigrationName
 ```
 
-## Creating an empty database migration
+### Creating an empty database migration
 
 ```bash
 $ typeorm migration:create -n MigrationName
 ```
+
+### Running / appplying database migrations
+
+```bash
+$ npm run build
+$ typeorm migration:run
+```
+
+### Reverting database migrations, one at a time
+
+```
+$ npm run build
+$ typeorm migration:revert
+```
+
+---
 
 ## Running the app
 
