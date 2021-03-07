@@ -13,6 +13,12 @@ export class BlbBaseEntity {
     @Column({ type: 'uuid', nullable: false })
     createdBy: string;
 
+    @Column({ type: 'timestamp', nullable: false })
+    modifiedAt: Date;
+
+    @Column({ type: 'uuid', nullable: false })
+    modifiedBy: string;
+
     @Column({ default: true, nullable: false })
     isEnabled: boolean;
 
